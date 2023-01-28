@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akarsh Portfolio</title>
 </head>
-<body class="bg-slate-50">
+<body class="bg-violet-50 ">
    
-<nav class=" text-white   bg-slate-700 sm:bg-opacity-90 h-18 pr-6 pl-6 md:py-4 py-4">
-    <div class="hamburger inline-block cursor-pointer md:hidden mt-2" onclick="myFunction(this)">
+<nav class=" text-white   bg-violet-800 sm:bg-opacity-90 h-auto pr-6 pl-6 md:py-4 py-4 ">
+    <div class="hamburger inline-block cursor-pointer md:hidden mt-2" onclick="myFunction(this)" id="hamburger">
         <div class="line h-0.5 w-5 my-1 bg-white"></div>
         <div class="line h-0.5 w-5 my-1 bg-white"></div>
         <div class="line h-0.5 w-5 my-1 bg-white"></div>
@@ -22,30 +22,29 @@
 
     <ul class="cursor-pointer text-md hidden md:flex md:justify-center md:visible lg:visible xl:visible" id="menu">
         <li class="invisible hidden"></li>
-        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">HOME</li>
-        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">EDUCATION</li>
-        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">SKILLS</li>
-        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">PROJECTS</li>
-        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">CONTACT</li>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900" ><a href="#home">HOME</li></a>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900"> <a href="#education"> EDUCATION</li></a>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900" > <a href="#skills">SKILLS</li></a>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900" > <a href="#projects">PROJECTS</li></a>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900" > <a href="#contact">CONTACT</li></a>
     </ul>
 </nav>
 
-<div class="m-6 md:flex md:my-16 justify-center items-center h-auto md:space-x-10 ">
-<div class="left flex-col p-4 md:text-left text-black text-lg leading-8 font-mono font-bold text-center justify-center items-center md:my-10 lg:my-10 my-6">Hello, <br/><span class="text-xl md:text-4xl lg:text-4xl font-extrabold"> I'm Akarsh Srivastava</span></br> <span class="font-2xl text-blue-600 leading-8">Frontend Developer</span></br>
+<div class="p-6 bg-violet-400 md:flex md:py-16 justify-center items-center h-auto md:space-x-10 " id="home">
+<div class="left  flex-col p-4 md:text-left text-black text-lg leading-8 font-mono font-bold text-center justify-center items-center md:my-10 lg:my-10 my-6">Hello, <br/><span class="text-xl md:text-4xl lg:text-4xl font-extrabold"> I'm Akarsh Srivastava</span></br> <span class="font-2xl text-white leading-8">Frontend Developer</span></br>
 
 <button class="flex-col my-3 justify-center items-center bg-transparent text-lg h-auto w-40 border-2 border-slate-700 rounded-full hover:bg-slate-700 hover:text-white " onclick="alert('Coming Soon')">Download CV</button>
 </div>
 
-<div class="right flex justify-center items-center  p-4 md:my-10 lg:my-10"> 
+<div class="right  flex justify-center items-center  p-4 md:py-10 lg:my-10"> 
     <img class="rounded-full w-auto h-72 md:h-80 lg:h-96  " src="pic.jpg"></div>
 </div>
- <hr>
-
-<div class="education m-6 md:m-10 p-4 flex-col ">
-    <div class="text-3xl font-mono font-bold text-black text-center">Education</div>
+<hr>
+<div class="education p-10 md:p-10  flex-col  " id="education">
+    <div class="text-3xl font-mono font-bold  text-center">Education</div>
     <div class="md:flex md:flex-row lg:flex lg:flex-row justify-center items-center md:space-x-10 lg:space-x-10" >
     <div>
-        <ul class="text-xl  font-semibold py-6 md:text-center lg:text-center ">High School
+        <ul class="text-xl  font-semibold py-4 md:text-centere  lg:text-center ">High School
             <li class="text-lg px-1 py-2">Shri Ram Public School,<span class="text-sm">Kanpur</span></li>
             <li class="text-sm px-1">7.6 CGPA</li>
         </ul>
@@ -68,7 +67,7 @@
 
 
 
-<div class="skill m-6 md:m-8 p-4 flex justify-center items-center">
+<div class="skill p-10 md:p-12 flex justify-center items-center bg-violet-500" id="skills">
 <div class="left text-3xl font-mono font-bold text-black text-center md:m-8 p-4">My Skills
 </div>
 <div class="font-semibold flex flex-row p-4 md:m-8 justify-center items-center">
