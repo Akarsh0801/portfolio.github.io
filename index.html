@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akarsh Portfolio</title>
+</head>
+<body class="bg-slate-50">
+   
+<nav class=" text-white   bg-slate-700 sm:bg-opacity-90 h-18 pr-6 pl-6 md:py-4 py-4">
+    <div class="hamburger inline-block cursor-pointer md:hidden mt-2" onclick="myFunction(this)">
+        <div class="line h-0.5 w-5 my-1 bg-white"></div>
+        <div class="line h-0.5 w-5 my-1 bg-white"></div>
+        <div class="line h-0.5 w-5 my-1 bg-white"></div>
+    </div>
+
+    <div class="inline-block absolute right-6 my-2 text-xl font-mono justify-center items-baseline md:hidden lg:hidden xl:hidden">
+        Akarsh Srivastava
+    </div>
+
+    <ul class="cursor-pointer text-md hidden md:flex md:justify-center md:visible lg:visible xl:visible" id="menu">
+        <li class="invisible hidden"></li>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">HOME</li>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">EDUCATION</li>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">SKILLS</li>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">PROJECTS</li>
+        <li class="my-0 md:mx-6 md:my-0 sm:my-2 hover:text-slate-900">CONTACT</li>
+    </ul>
+</nav>
+
+<div class="m-6 md:flex md:my-16 justify-center items-center h-auto md:space-x-10 ">
+<div class="left flex-col p-4 md:text-left text-black text-lg leading-8 font-mono font-bold text-center justify-center items-center md:my-10 lg:my-10 my-6">Hello, <br/><span class="text-xl md:text-4xl lg:text-4xl font-extrabold"> I'm Akarsh Srivastava</span></br> <span class="font-2xl text-blue-600 leading-8">Frontend Developer</span></br>
+
+<button class="flex-col my-3 justify-center items-center bg-transparent text-lg h-auto w-40 border-2 border-slate-700 rounded-full hover:bg-slate-700 hover:text-white " onclick="alert('Coming Soon')">Download CV</button>
+</div>
+
+<div class="right flex justify-center items-center  p-4 md:my-10 lg:my-10"> 
+    <img class="rounded-full w-auto h-72 md:h-80 lg:h-96  " src="pic.jpg"></div>
+</div>
+ <hr>
+
+<div class="education m-6 md:m-10 p-4 flex-col ">
+    <div class="text-3xl font-mono font-bold text-black text-center">Education</div>
+    <div class="md:flex md:flex-row lg:flex lg:flex-row justify-center items-center md:space-x-10 lg:space-x-10" >
+    <div>
+        <ul class="text-xl  font-semibold py-6 md:text-center lg:text-center ">High School
+            <li class="text-lg px-1 py-2">Shri Ram Public School,<span class="text-sm">Kanpur</span></li>
+            <li class="text-sm px-1">7.6 CGPA</li>
+        </ul>
+    </div>
+<div>
+        <ul class="text-xl font-semibold py-4 md:text-center lg:text-center">Intermediate
+            <li class="text-lg px-1 py-2">Shri Ram Public School,<span class="text-sm">Kanpur</span></li>
+            <li class="text-sm px-1">62%</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="text-xl font-semibold py-4 md:text-center lg:text-center">Bachelor of Computer Applications
+            <li class="text-lg px-1 py-2">PSIT,<span class="text-sm">Kanpur</span></li>
+            <li class="text-sm px-1">57.55%</li>
+        </ul>
+    </div>
+    </div>
+</div>
+<hr>
+
+
+
+<div class="skill m-6 md:m-8 p-4 flex justify-center items-center">
+<div class="left text-3xl font-mono font-bold text-black text-center md:m-8 p-4">My Skills
+</div>
+<div class="font-semibold flex flex-row p-4 md:m-8 justify-center items-center">
+    <div class="right flex flex-col space-y-2">
+        <span></span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Tailwind CSS</span>
+        <span>Bootstrap</span>
+        <span>Javascript</span>
+        <span>Wix</span>
+        <span>Ms Excel</span>
+        <span>Ms Word</span>
+    </div>
+</div>
+</div>
+
+<hr>
+
+<script>
+function myFunction(){
+    var x = document.getElementById("menu");
+    if(x.style.display == "block"){
+        x.style.display == "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+</body>
+</html>
